@@ -28,7 +28,6 @@ describe('partial mocking', () => {
   });
 
   test('mockOne, mockTwo, mockThree should not log into console', () => {
-    // Write your test here
     mockOne();
     mockTwo();
     mockThree();
@@ -36,7 +35,6 @@ describe('partial mocking', () => {
   });
 
   test('unmockedFunction should log into console', () => {
-    // Write your test here
     unmockedFunction();
     expect(spy).toHaveBeenCalled();
   });
